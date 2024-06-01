@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getUsers, getEvents, addEvent, addUser } from 'api/api';
+import { getEvents } from 'api/api';
 
 const Event = () => {
   const [events, setEvents] = useState([]);
@@ -12,8 +12,6 @@ const Event = () => {
 
     getAllEvents();
   }, []);
-
-
 
   return (
     <div>
